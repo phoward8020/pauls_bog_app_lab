@@ -1,0 +1,13 @@
+<div class="container">
+<h1>Swamp Creatures!!</h1>
+<!-- <%= @creatures.inspect %>  -->
+<ul>
+  <% @creatures.each do |creature| %> 
+  <li><%= creature.name_common %> <%= link_to 'Show', creature, :class=>'btn btn-primary btn-xs' %> </li>
+  <% end %> 
+</ul>
+
+<!-- Look up docs on link_to helper and other helpers -->
+<%= link_to 'Create Creature', new_creature_path, :class=>'btn btn-primary' %> 
+
+</div>
